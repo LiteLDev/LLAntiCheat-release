@@ -6,29 +6,37 @@ Free AntiCheat plugin for LiteLoaderBDS 2
 Continuously updating
 
 ## Features
+
 - Anti Xray
 - High Performance Ore Obfuscate
 - Anti XpOrb
 - Fix funnel bug
-- Anti illegal using command block and structure block
+- ~~Anti illegal using command block and structure block~~(Mojang have fixed it)
 - Anti KillAura
 - Anti illegal enchant
 - Fix debug packet modify game data
 - Fix crash caused by push chest
+- ~~Fix stonecutter change item data~~(Mojang have fixed it)
 - Add Anvil cost check(Anti fake exp)
 - Anti FakeName
+- ~~Fix thorns's bug: copy item and crash server~~(Mojang have fixed it)
 - Fix furnace copy item
 - Fix funnel minecart copy item
 - Fix furnace exp bug
 - Anti AutoClick
+- Anti fly and teleport(BDS built-in)
+- Anti range destruction(BDS built-in)
 
 ## Supported Version
+
 Bedrock Dedicated Server 1.19.1.01
 
 ## Download
+
 [Release](https://github.com/LiteLDev/LLAntiCheat-release/releases)
 
 ## Addition
+
 In order to ensure the effect, please ensure that the LiteLoaderBDS has not been modified
 and change `correct-player-movement` and `server-authoritative-block-breaking` to `true`
 and make the type of `server-authoritative-movement` is `"server-auth"` or `"server-auth-with-rewind"
@@ -38,9 +46,15 @@ in `server.properties`
 **In order to protect proprietary software, this plugin uses other technologies to protect the binary files released by us. In case of false positives from anti-virus software, please join the (static scan) whitelist. To ensure your safety, it is recommended not to close anti-virus software or disable firewalls**
 
 ## Feedback&Feature Request
+
 WangYneos@outlook.com
 
+## Feedback group
+LLAC dedicated QQ Group: 931871701  
+QQ Groups ,telegram channel and discord server of LL
+
 ## Configuration File
+
 Version PreRelease 22 fix 11  
 Translation not 100% accurate
 
