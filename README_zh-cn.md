@@ -19,7 +19,7 @@ LiteLoaderBDS 2 的免费反作弊插件
 - 反非法give（LL内置）
 - 反调试包修改数据
 - 修复推箱子崩服
-- ~~修复切石机修改物品~~（bds已修复）
+- ~~修复切石机修改物品~~（BDS已修复）
 - 添加铁砧花费校验（反假经验）
 - 反虚假名字
 - ~~修复荆棘复制物品和崩服bug~~（BDS已修复）
@@ -55,7 +55,7 @@ WangYneos@outlook.com
 ## 反馈群
 
 LLAC专用反馈QQ群: 931871701  
-LL的QQ群/TG频道
+LL的QQ群/TG频道/discord服务器
 
 ## LiteLoader 反作弊配置文件解释
 
