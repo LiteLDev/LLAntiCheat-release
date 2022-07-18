@@ -74,6 +74,15 @@ Translation not 100% accurate
         //Force transparent blocks(ID)
         "ForceTransparentBlocks": []
     },
+    "BuiltinPunish": {
+        //作弊次数到达CheatCountBan执行的命令
+        //Command executed when the number of cheats reaches CheatCountBan
+        "BanCommand": "ban {player}",
+        "CheatCountBan": 8,
+        "CheatCountKick": 4,
+        "CrashAsKick": false,
+        "KickMessage": "[AntiCheat] You have been kicked for {reason}"
+    },
     //附魔相关内容
     //Enchant related information
     "Enchant": {
@@ -87,12 +96,6 @@ Translation not 100% accurate
         //箱子崩服
         //Fix Illegal Chest that cause Server Crash
         "ChestCrash": true,
-        //修复熔炉复制物品
-        //Fix CopyItem Bug in Furance
-        "FuranceReplicate": true,
-        //修复经验熔炉
-        //Fix Experience Spawn Bug in Furance
-        "InfiniteXpFurnace": false,
         //修复活塞推箱子复制物品
         //Fix CopyItem Bug when the Container is pushed by the piston
         "HopperReplicate": true,
@@ -102,25 +105,6 @@ Translation not 100% accurate
         //修复分解台复制物品
         //fix CopyItem Bug material reducer
         "ReducerReplicate": true
-    },
-    //踢出消息
-    //Message When Player has been kicked from server
-    "KickMessage": {
-        //大多数情况下的消息
-        //Kick Message in most cases
-        "CommonCheat": "[AntiCheat] You have been kicked for cheating",
-        //异常附魔，超出配置文件规定的附魔物品被使用/放入背包
-        //Abnormal enchantments, items that exceed the enchantment level specified in Enchant.MaxLevel
-        "IllegalEnchant": "[AntiCheat] You have been detected for using <Cheat:IllegalEnchant>",
-        //无效的玩家名，即NameTag和XBox玩家名不一致
-        //Invalid Player Name(NameTag!=XBoxPlayerName)
-        "InvalidName": "[AntiCheat] You have been detected for using <Cheat:InvalidName>",
-        //杀戮 短时间内杀人太多
-        //Killing too many people in a short period of time
-        "KillAura": "[AntiCheat] You have been detected for using <Cheat:KillAura>",
-        //刷经验
-        //Illegal Experience or Level Request
-        "XpHack": "[AntiCheat] You have been detected for using <Cheat:XpHack>"
     },
     //踢出开关
     "KickSwitch": {
@@ -141,7 +125,6 @@ Translation not 100% accurate
         "XpHack": true
     },
     //杀戮光环
-    //KillAura
     "KillAura": {
         //攻击间隔时间(毫秒)
         //Attack interval time(ms)
@@ -152,8 +135,7 @@ Translation not 100% accurate
             "minecraft:boat",
             "minecraft:minecart"
         ],
-        //开关
-        //Switch
+        //是否检查KillAura
         "CheckKillAura": true,
         //开启假人检测
         //Enable fake player for detection
@@ -182,26 +164,12 @@ Translation not 100% accurate
         //反矿透
         //Prevent Player from Using Xray Mods to fine Ores
         "AntiXray": true,
-        //反矿透混淆模式，依赖“反矿透”功能开启，不建议关闭
-        //Obfuscation mode, depending on the "AntiXray" function
-        "AntiXrayObfs": true,
-        //作弊次数到达CheatCountBan执行的命令
-        //Command executed when the number of cheats reaches CheatCountBan
-        "BanCommand": "ban {player}",
-        "CheatCountBan": 8,
-        "CheatCountKick": 4,
         //校验铁砧经验需求
         //Check anvil experience requirements
         "CheckAnvilCost": true,
         //检查附魔
         //Check Item's Enchantment
         "CheckEnchant": true,
-        //检查杀戮
-        //Check for Killaura
-        "CheckKillaura": true,
-        //最大每秒击杀数，依赖“检查杀戮”功能开启
-        //Maximum number of kills per second, depending on the "CheckKillaura" function
-        "KillPerSecond": 8,
         //检查切石机（防止客户端修改切石机输出）
         //Check StoneCutter (prevent client from modifying StoneCutter output)
         "CheckStoneCutter": true,
@@ -211,9 +179,12 @@ Translation not 100% accurate
         //禁用NPC
         //Disable NPC
         "DisableNPC": true,
+        //禁止在打开背包时移动
+        //Prohibit movement while opening backpack
+        "InventoryMove": true,
         //阻止游戏期间更皮肤
         //Prevent Player Change Skin During the Game
-        "PreventChangeSkin": true
+        "PreventChangeSkin": false
     }
 }
 ```
